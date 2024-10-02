@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.List;
 
 public class Encomenda {
     private String numero;
@@ -8,7 +9,7 @@ public class Encomenda {
     private double valorLiquido;
     private String formaPagamento;
     private int quantidadeParcelas;
-    private Cliente cliente;
+    private List<Produto> produtos; // Adicionando a lista de produtos
     public static void main(String[] args) {
         
     }
@@ -35,6 +36,6 @@ public class Encomenda {
     public int getQuantidadeParcelas() { return quantidadeParcelas; }
     public void setQuantidadeParcelas(int quantidadeParcelas) { this.quantidadeParcelas = quantidadeParcelas; }
 
-    public Cliente getCliente() { return cliente; }
-    public void setCliente(Cliente cliente) { this.cliente = cliente; }
+    public List<Produto> getProdutos() { return produtos; } // Getter para produtos
+    public void setProdutos(List<Produto> produtos) { this.produtos = produtos; } // Setter para produtos
 }
